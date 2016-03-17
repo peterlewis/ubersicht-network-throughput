@@ -4,8 +4,8 @@ command: """
     {
     while read -r line;
     do
-        downBytes=$(echo $line | awk '{down+=$4} END {print down}');
-        upBytes=$(echo $line | awk '{up+=$6} END {print up}');
+        downBytes=$(($downBytes + $(echo $line | awk '{down+=$4} END {print down}')));
+        upBytes=$(($upBytes + $(echo $line | awk '{up+=$6} END {print up}')));
         result=$(echo "$downBytes $upBytes");
     done
     echo $result;
