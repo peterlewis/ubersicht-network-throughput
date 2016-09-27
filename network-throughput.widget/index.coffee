@@ -1,17 +1,7 @@
 command: """
-    sar -n DEV 1 1 2> /dev/null |
-    grep '[0-9].*en[0-9]' |
-    {
-    while read -r line;
-    do
-        downBytes=$(($downBytes + $(echo $line | awk '{down=$4} END {print down}')));
-        upBytes=$(($upBytes + $(echo $line | awk '{up=$6} END {print up}')));
-        result=$(echo "$downBytes $upBytes");
-    done
-    echo $result;
-    }
+    network-usage-bar.widget/lib/network.sh
 """
-refreshFrequency: 3000
+refreshFrequency: 2000
 
 style: """
     // Change bar height
@@ -146,10 +136,10 @@ update: (output, domEl) ->
         $(domEl).find(".#{sel}").text usage(currBytes)
         $(domEl).find(".bar-#{sel}").css "width", percent
 
-    lines = output.split " "
+    args = output.split "^"
 
-    downBytes = (Number) lines[0]
-    upBytes = (Number) lines[1]
+    downBytes = (Number) args[0]
+    upBytes = (Number) args[1]
 
     totalBytes = downBytes + upBytes
 
