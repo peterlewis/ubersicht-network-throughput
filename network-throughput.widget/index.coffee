@@ -1,5 +1,5 @@
 command: """
-    network-usage-bar.widget/lib/network.sh
+    network-throughput.widget/lib/network.sh
 """
 refreshFrequency: 2000
 
