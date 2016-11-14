@@ -5,7 +5,7 @@ their upload and download speeds together and gives you a readout.
 ![Screenshot of widget](screenshot.png)
 
 # Download
-[Download Now Playing][download]
+[Download Network Throughput Monitor][download]
 
 [uber]: http://tracesof.net/uebersicht
 [download]: https://github.com/dionmunk/ubersicht-network-throughput/raw/master/network-throughput.widget.zip
