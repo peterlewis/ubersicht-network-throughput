@@ -12,8 +12,8 @@ A simple Network Throughput monitor for [Übersicht](http://tracesof.net/uebersi
 ## Installation
 
 - Download the [repository](https://github.com/dionmunk/ubersicht-network-throughput/archive/master.zip) and extract it.
-- Place the `network-throughput.widget` folder in your Ubersicht extension folder.
-- Refresh Ubersicht.
+- Place the `network-throughput.widget` folder in your Übersicht extension folder.
+- Refresh Übersicht.
 
 ## License
 
