@@ -1,7 +1,7 @@
 command: """
     network-throughput.widget/lib/network.sh
 """
-refreshFrequency: 2000
+refreshFrequency: '1s'
 
 style: """
     // Change bar height
@@ -11,7 +11,7 @@ style: """
     widget-align = left
 
     // Position this where you want
-    top 10px
+    top 170px
     left 10px
 
     // Statistics text settings
@@ -75,7 +75,7 @@ style: """
         height: bar-height
         border-radius: bar-height
         clear: both
-        background: rgba(#fff, .5)
+        background: rgba(#ccc, .5)
         position: absolute
         margin-bottom: 5px
 
@@ -91,11 +91,11 @@ style: """
         border-radius: 0 bar-height bar-height 0
         float: right
 
-    .bar-down
-        background: rgba(#c00, .5)
-
     .bar-up
-        background: rgba(#0bf, .5)
+        background: rgba(#74c5d9, 1)
+
+    .bar-down
+        background: rgba(#df5077, 1)
 """
 
 render: -> """
@@ -136,10 +136,10 @@ update: (output, domEl) ->
         $(domEl).find(".#{sel}").text usage(currBytes)
         $(domEl).find(".bar-#{sel}").css "width", percent
 
-    args = output.split "^"
+    lines = output.split "^"
 
-    downBytes = (Number) args[0]
-    upBytes = (Number) args[1]
+    downBytes = (Number) lines[0]
+    upBytes = (Number) lines[1]
 
     totalBytes = downBytes + upBytes
 
