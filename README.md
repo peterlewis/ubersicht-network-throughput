@@ -1,11 +1,20 @@
-# Network Throughput Monitor for [Übersicht][uber]
-A simple network throughput monitor for [Übersicht][uber]. The widget takes all of your available network connections and adds
-their upload and download speeds together and gives you a readout.
+# Network Throughput
 
-![Screenshot of widget](screenshot.png)
+[![Creative Commons](https://flat.badgen.net/badge/license/CC-BY-NC-4.0/orange)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-# Download
-[Download Network Throughput Monitor][download]
+A simple Network Throughput monitor for [Übersicht](http://tracesof.net/uebersicht) using the colors from [Monokai Faded](https://dionmunk.com/projects/monokai-faded/). The widget takes all of your available network connections and adds their upload and download speeds together and gives you a readout.
 
-[uber]: http://tracesof.net/uebersicht
-[download]: https://github.com/dionmunk/ubersicht-network-throughput/raw/master/network-throughput.widget.zip
+## Screenshot
+
+![Screenshot](screenshots/screenshot.png)
+
+
+## Installation
+
+- Download the [repository](https://github.com/dionmunk/ubersicht-network-throughput/archive/master.zip) and extract it.
+- Place the `network-throughput.widget` folder in your Ubersicht extension folder.
+- Refresh Ubersicht.
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
