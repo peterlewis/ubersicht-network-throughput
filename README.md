@@ -2,7 +2,7 @@
 
 [![Creative Commons](https://flat.badgen.net/badge/license/CC-BY-NC-4.0/orange)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-A simple Network Throughput monitor for [Übersicht](http://tracesof.net/uebersicht) using the colors from [Monokai Faded](https://dionmunk.com/projects/monokai-faded/). The widget takes all of your available network connections and adds their upload and download speeds together and gives you a readout.
+A simple Network Throughput widget for [Übersicht](http://tracesof.net/uebersicht) using the colors from [Monokai Faded](https://dionmunk.com/projects/monokai-faded/). The widget takes all of your available network connections and adds their upload and download speeds together and gives you a readout.
 
 ## Screenshot
 
