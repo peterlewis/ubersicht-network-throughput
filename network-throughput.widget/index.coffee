@@ -17,7 +17,7 @@ style: """
     // Statistics text settings
     color #fff
     font-family Helvetica Neue
-    background rgba(#000, .5)
+    background rgba(#2e3440, .6)
     padding 10px 10px 15px
     border-radius 5px
 
@@ -92,10 +92,10 @@ style: """
         float: right
 
     .bar-up
-        background: rgba(#74c5d9, 1)
+        background: rgba(#88c0d0, 1)
 
     .bar-down
-        background: rgba(#df5077, 1)
+        background: rgba(#bf616a, 1)
 """
 
 render: -> """
