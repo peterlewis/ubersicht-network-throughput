@@ -11,8 +11,8 @@ style: """
     widget-align = left
 
     // Position this where you want
-    top 170px
-    left 10px
+    bottom 24px
+    left 24px
 
     // Statistics text settings
     color #fff
